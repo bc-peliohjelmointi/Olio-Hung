@@ -1,0 +1,28 @@
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.exe
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.deps.json
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.runtimeconfig.json
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.dll
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.pdb
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.AssemblyInfoInputs.cache
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.AssemblyInfo.cs
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.csproj.CoreCompileInputs.cache
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.dll
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\refint\Ovitehrävä.dll
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.pdb
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.genruntimeconfig.cache
+C:\Users\s2300809\OneDrive - Business College Helsinki\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\ref\Ovitehrävä.dll
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.exe
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.deps.json
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.runtimeconfig.json
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.dll
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\bin\Debug\net8.0\Ovitehrävä.pdb
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.AssemblyInfoInputs.cache
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.AssemblyInfo.cs
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.csproj.CoreCompileInputs.cache
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.dll
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\refint\Ovitehrävä.dll
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.pdb
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\Ovitehrävä.genruntimeconfig.cache
+C:\Tiedostot\Visual Studio 2022\Ritaripeli\Ovitehtävä\Ovitehrävä\obj\Debug\net8.0\ref\Ovitehrävä.dll

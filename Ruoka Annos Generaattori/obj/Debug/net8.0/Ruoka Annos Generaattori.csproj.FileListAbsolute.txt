@@ -1,0 +1,14 @@
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\bin\Debug\net8.0\Ruoka Annos Generaattori.exe
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\bin\Debug\net8.0\Ruoka Annos Generaattori.deps.json
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\bin\Debug\net8.0\Ruoka Annos Generaattori.runtimeconfig.json
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\bin\Debug\net8.0\Ruoka Annos Generaattori.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\bin\Debug\net8.0\Ruoka Annos Generaattori.pdb
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.AssemblyInfoInputs.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.AssemblyInfo.cs
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.csproj.CoreCompileInputs.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\refint\Ruoka Annos Generaattori.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.pdb
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\Ruoka Annos Generaattori.genruntimeconfig.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Ruoka Annos Generaattori\obj\Debug\net8.0\ref\Ruoka Annos Generaattori.dll
