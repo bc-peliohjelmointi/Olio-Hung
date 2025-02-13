@@ -1,0 +1,14 @@
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\bin\Debug\net8.0\Nuolia Kaupan.exe
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\bin\Debug\net8.0\Nuolia Kaupan.deps.json
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\bin\Debug\net8.0\Nuolia Kaupan.runtimeconfig.json
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\bin\Debug\net8.0\Nuolia Kaupan.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\bin\Debug\net8.0\Nuolia Kaupan.pdb
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.AssemblyInfoInputs.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.AssemblyInfo.cs
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.csproj.CoreCompileInputs.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\refint\Nuolia Kaupan.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.pdb
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\Nuolia Kaupan.genruntimeconfig.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Nuolia Kaupan\obj\Debug\net8.0\ref\Nuolia Kaupan.dll
