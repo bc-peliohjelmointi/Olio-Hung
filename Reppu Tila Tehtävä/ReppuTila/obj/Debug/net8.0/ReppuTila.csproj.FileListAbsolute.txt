@@ -1,0 +1,14 @@
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\bin\Debug\net8.0\ReppuTila.exe
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\bin\Debug\net8.0\ReppuTila.deps.json
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\bin\Debug\net8.0\ReppuTila.runtimeconfig.json
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\bin\Debug\net8.0\ReppuTila.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\bin\Debug\net8.0\ReppuTila.pdb
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.AssemblyInfoInputs.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.AssemblyInfo.cs
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.csproj.CoreCompileInputs.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\refint\ReppuTila.dll
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.pdb
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ReppuTila.genruntimeconfig.cache
+C:\Tiedostot\Visual Studio 2022\Pelikehitys Tehtävät\Reppu Tila Tehtävä\ReppuTila\obj\Debug\net8.0\ref\ReppuTila.dll
