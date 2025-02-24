@@ -7,53 +7,57 @@ namespace ReppuTila
     {
         public class Tavara
         {
-            public double Paino { get; set; } 
-            public double Tilavuus { get; set; } 
+            public double Paino { get; set; }
+            public double Tilavuus { get; set; }
 
             public Tavara(double paino, double tilavuus)
             {
                 Paino = paino;
                 Tilavuus = tilavuus;
             }
+
+            public override string ToString()
+            {
+                return GetType().Name;
+            }
         }
 
-        
         public class Nuoli : Tavara
         {
-            public Nuoli() : base(0.1, 0.05) { } 
+            public Nuoli() : base(0.1, 0.05) { }
         }
 
         public class Jousi : Tavara
         {
-            public Jousi() : base(1.0, 4.0) { } 
+            public Jousi() : base(1.0, 4.0) { }
         }
 
         public class Köysi : Tavara
         {
-            public Köysi() : base(1.0, 1.5) { } 
+            public Köysi() : base(1.0, 1.5) { }
         }
 
         public class Vesi : Tavara
         {
-            public Vesi() : base(2.0, 2.0) { } 
+            public Vesi() : base(2.0, 2.0) { }
         }
 
         public class RuokaAnnos : Tavara
         {
-            public RuokaAnnos() : base(1.0, 0.5) { } 
+            public RuokaAnnos() : base(1.0, 0.5) { }
         }
 
         public class Miekka : Tavara
         {
-            public Miekka() : base(5.0, 3.0) { } 
+            public Miekka() : base(5.0, 3.0) { }
         }
 
         public class Reppu
         {
-            private List<Tavara> tavarat; 
-            public int MaxTavarat { get; set; } 
-            public double MaxPaino { get; set; } 
-            public double MaxTilavuus { get; set; } 
+            private List<Tavara> tavarat;
+            public int MaxTavarat { get; set; }
+            public double MaxPaino { get; set; }
+            public double MaxTilavuus { get; set; }
 
             public Reppu(int maxTavarat, double maxPaino, double maxTilavuus)
             {
@@ -63,7 +67,13 @@ namespace ReppuTila
                 MaxTilavuus = maxTilavuus;
             }
 
-            
+            public override string ToString()
+            {
+                if (tavarat.Count == 0)
+                    return "Reppu on tyhjä.";
+                return "Reppussa on seuraavat tavarat: " + string.Join(", ", tavarat);
+            }
+
             public double TavaroidenPaino()
             {
                 double paino = 0;
@@ -74,7 +84,6 @@ namespace ReppuTila
                 return paino;
             }
 
-            
             public double TavaroidenTilavuus()
             {
                 double tilavuus = 0;
@@ -85,39 +94,26 @@ namespace ReppuTila
                 return tilavuus;
             }
 
-            
             public bool Add(Tavara tavara)
             {
                 if (tavarat.Count >= MaxTavarat ||
                     TavaroidenPaino() + tavara.Paino > MaxPaino ||
                     TavaroidenTilavuus() + tavara.Tilavuus > MaxTilavuus)
                 {
-                    return false; 
+                    return false;
                 }
                 tavarat.Add(tavara);
-                return true; 
-            }
-
-            
-            public void TilanTarkistus()
-            {
-                Console.WriteLine($"Repussa on tällä hetkellä {tavarat.Count}/{MaxTavarat} tavaraa.");
-                Console.WriteLine($"Repun paino: {TavaroidenPaino()}/{MaxPaino}.");
-                Console.WriteLine($"Repun tilavuus: {TavaroidenTilavuus()}/{MaxTilavuus}.");
+                return true;
             }
         }
 
         static void Main(string[] args)
         {
-            
             Reppu reppu = new Reppu(10, 30, 20);
 
             while (true)
             {
-                
-                reppu.TilanTarkistus();
-
-                
+                Console.WriteLine(reppu.ToString());
                 Console.WriteLine("Mitä haluat lisätä?");
                 Console.WriteLine("1 - Nuoli");
                 Console.WriteLine("2 - Jousi");
@@ -127,10 +123,8 @@ namespace ReppuTila
                 Console.WriteLine("6 - Miekka");
 
                 string valinta = Console.ReadLine();
-
                 Tavara uusiTavara = null;
 
-                
                 switch (valinta)
                 {
                     case "1":
@@ -153,10 +147,9 @@ namespace ReppuTila
                         break;
                     default:
                         Console.WriteLine("Virheellinen valinta, yritä uudelleen.");
-                        continue; 
+                        continue;
                 }
 
-               
                 if (reppu.Add(uusiTavara))
                 {
                     Console.WriteLine("Tavara lisätty onnistuneesti!");
