@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4x+7SfQ7k/YWtnhdbx18L5ub1rLdsomg3X92oXx57ufGeF0oE47cm22WoByV5IYUZz9yIgvc8yAeobfQeWxAoA==",
+  "success": true,
+  "projectFilePath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\Tykkipeli\\Tanks\\Tanks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s2300809\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

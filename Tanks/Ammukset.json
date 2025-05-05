@@ -1,0 +1,26 @@
+﻿[
+    {
+        "nimi": "Perusammus",
+        "väri": "Red",
+        "säde": 15,
+        "räjähdyksenKoko": 30,
+        "paino": 0.8,
+        "vahinko": 25
+    },
+    {
+        "nimi": "Raskasammus",
+        "väri": "DarkBlue",
+        "säde": 20,
+        "räjähdyksenKoko": 45,
+        "paino": 0.9,
+        "vahinko": 50
+    },
+    {
+        "nimi": "Kevytammus",
+        "väri": "Green",
+        "säde": 10,
+        "räjähdyksenKoko": 20,
+        "paino": 0.5,
+        "vahinko": 10
+    }
+]
