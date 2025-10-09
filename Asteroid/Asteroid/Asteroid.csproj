@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HungLib\HungLib.csproj" />
+    <ProjectReference Include="..\..\..\Visual Studio 2022\Komponenttikirjastot Tehtävät\HungLib\HungLib.csproj" />
+    <ProjectReference Include="..\..\Valikkopeli\Valikkopeli\Valikkopeli.csproj" />
   </ItemGroup>
 
   <ItemGroup>

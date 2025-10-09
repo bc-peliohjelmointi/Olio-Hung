@@ -1,62 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\",
+  "WorkspaceRootPath": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BD6ED10-D3A9-A942-14A7-D9B08B7D40EB}|..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj|c:\\tiedostot\\olio-hung\\valikkopeli\\valikkopeli\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\asteroid.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:asteroid.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C61AC14-9211-75DE-3348-8DFC6316CE81}|..\\..\\HungLib\\HungLib.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\hunglib\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C61AC14-9211-75DE-3348-8DFC6316CE81}|..\\..\\HungLib\\HungLib.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\hunglib\\collision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C61AC14-9211-75DE-3348-8DFC6316CE81}|..\\..\\HungLib\\HungLib.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\hunglib\\hunglib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:asteroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\rocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:rocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\asteroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\asteroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:asteroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\collision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:collision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\asteroid\\asteroid\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\rocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:rocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\collision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:collision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD6ED10-D3A9-A942-14A7-D9B08B7D40EB}|..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj|c:\\tiedostot\\olio-hung\\valikkopeli\\valikkopeli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD6ED10-D3A9-A942-14A7-D9B08B7D40EB}|..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj|c:\\tiedostot\\olio-hung\\valikkopeli\\valikkopeli\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD6ED10-D3A9-A942-14A7-D9B08B7D40EB}|..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj|c:\\tiedostot\\olio-hung\\valikkopeli\\valikkopeli\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD6ED10-D3A9-A942-14A7-D9B08B7D40EB}|..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj|c:\\tiedostot\\olio-hung\\valikkopeli\\valikkopeli\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD6ED10-D3A9-A942-14A7-D9B08B7D40EB}|..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj|c:\\tiedostot\\olio-hung\\valikkopeli\\valikkopeli\\valikkopeli.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|c:\\tiedostot\\olio-hung\\asteroid\\asteroid\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD1C3BA1-599A-40D7-9FA9-0EA8A52C4A3C}|Asteroid.csproj|solutionrelative:transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4D9423AC-374E-F78A-C2D8-DD9CE705026E}|..\\..\\..\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\HungLib.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\hunglib\\collision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D9423AC-374E-F78A-C2D8-DD9CE705026E}|..\\..\\..\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\HungLib.csproj|c:\\tiedostot\\visual studio 2022\\komponenttikirjastot teht\u00E4v\u00E4t\\hunglib\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,159 +77,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Asteroid",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Asteroid.csproj",
-              "RelativeDocumentMoniker": "Asteroid.csproj",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Asteroid.csproj",
-              "RelativeToolTip": "Asteroid.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-29T10:13:30.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Program.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Program.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAkwCUBAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T09:43:15.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HungLib.csproj",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\HungLib.csproj",
-              "RelativeDocumentMoniker": "..\\..\\HungLib\\HungLib.csproj",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\HungLib.csproj",
-              "RelativeToolTip": "..\\..\\HungLib\\HungLib.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-29T09:38:17.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Collision.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Collision.cs",
-              "RelativeDocumentMoniker": "..\\..\\HungLib\\Collision.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Collision.cs",
-              "RelativeToolTip": "..\\..\\HungLib\\Collision.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwC4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T09:38:27.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Transform.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Transform.cs",
-              "RelativeDocumentMoniker": "..\\..\\HungLib\\Transform.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Transform.cs",
-              "RelativeToolTip": "..\\..\\HungLib\\Transform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T09:29:53.306Z"
+              "WhenOpened": "2025-08-20T09:43:15.654Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Enemy.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Enemy.cs",
               "RelativeDocumentMoniker": "Enemy.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Enemy.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Enemy.cs",
               "RelativeToolTip": "Enemy.cs",
-              "ViewState": "AgIAABQAAAAA+AMUZPThv0QAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T06:39:28.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Asteroid.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Asteroid.cs",
-              "RelativeDocumentMoniker": "Asteroid.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Asteroid.cs",
-              "RelativeToolTip": "Asteroid.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T09:33:44.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Bullet.cs",
-              "RelativeDocumentMoniker": "Bullet.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Bullet.cs",
-              "RelativeToolTip": "Bullet.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T09:34:34.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Sprite.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Sprite.cs",
-              "RelativeDocumentMoniker": "Sprite.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Sprite.cs",
-              "RelativeToolTip": "Sprite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T09:31:02.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Rocket.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Rocket.cs",
-              "RelativeDocumentMoniker": "Rocket.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Rocket.cs",
-              "RelativeToolTip": "Rocket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T09:43:15.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Asteroid.csproj",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Asteroid.csproj",
-              "RelativeDocumentMoniker": "Asteroid.csproj",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Asteroid.csproj",
-              "RelativeToolTip": "Asteroid.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-12T09:22:29.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Collision.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Collision.cs",
-              "RelativeDocumentMoniker": "Collision.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Collision.cs",
-              "RelativeToolTip": "Collision.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T09:43:17.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Player.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Player.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Player.cs",
               "RelativeToolTip": "Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -226,27 +117,196 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rocket.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Rocket.cs",
+              "RelativeDocumentMoniker": "Rocket.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Rocket.cs",
+              "RelativeToolTip": "Rocket.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T09:43:15.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Sprite.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Sprite.cs",
+              "RelativeDocumentMoniker": "Sprite.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Sprite.cs",
+              "RelativeToolTip": "Sprite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T09:31:02.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\Game.cs",
+              "RelativeDocumentMoniker": "..\\..\\Valikkopeli\\Valikkopeli\\Game.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\Game.cs",
+              "RelativeToolTip": "..\\..\\Valikkopeli\\Valikkopeli\\Game.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAIwFMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:11:56.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Asteroid.csproj",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj",
+              "RelativeDocumentMoniker": "Asteroid.csproj",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj",
+              "RelativeToolTip": "Asteroid.csproj",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAABsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-07T06:41:12.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Asteroid.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.cs",
+              "RelativeDocumentMoniker": "Asteroid.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.cs",
+              "RelativeToolTip": "Asteroid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T09:33:44.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Collision.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Collision.cs",
+              "RelativeDocumentMoniker": "Collision.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Collision.cs",
+              "RelativeToolTip": "Collision.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T09:43:17.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Bullet.cs",
+              "RelativeDocumentMoniker": "Bullet.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Bullet.cs",
+              "RelativeToolTip": "Bullet.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T09:34:34.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\Valikkopeli\\Valikkopeli\\Program.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\Program.cs",
+              "RelativeToolTip": "..\\..\\Valikkopeli\\Valikkopeli\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:08:39.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "..\\..\\Valikkopeli\\Valikkopeli\\PauseMenu.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\PauseMenu.cs",
+              "RelativeToolTip": "..\\..\\Valikkopeli\\Valikkopeli\\PauseMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:14:04.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OptionsMenu.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\OptionsMenu.cs",
+              "RelativeDocumentMoniker": "..\\..\\Valikkopeli\\Valikkopeli\\OptionsMenu.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\OptionsMenu.cs",
+              "RelativeToolTip": "..\\..\\Valikkopeli\\Valikkopeli\\OptionsMenu.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvygAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:13:53.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameSettings.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\GameSettings.cs",
+              "RelativeDocumentMoniker": "..\\..\\Valikkopeli\\Valikkopeli\\GameSettings.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\GameSettings.cs",
+              "RelativeToolTip": "..\\..\\Valikkopeli\\Valikkopeli\\GameSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T07:19:39.095Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Valikkopeli.csproj",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj",
+              "RelativeDocumentMoniker": "..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj",
+              "RelativeToolTip": "..\\..\\Valikkopeli\\Valikkopeli\\Valikkopeli.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-07T07:23:46.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Transform.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Transform.cs",
+              "RelativeDocumentMoniker": "Transform.cs",
+              "ToolTip": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Transform.cs",
+              "RelativeToolTip": "Transform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T09:26:41.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAEwHAAAAAAAAAAAowGAHAAAEAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAHoIAAAAAAAAAAAWwIwIAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-08-12T08:43:33.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Transform.cs",
-              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Transform.cs",
-              "RelativeDocumentMoniker": "Transform.cs",
-              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\Asteroid\\Asteroid\\Transform.cs",
-              "RelativeToolTip": "Transform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Transform.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Transform.cs",
+              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Transform.cs",
+              "RelativeToolTip": "..\\..\\..\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Transform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T09:26:41.79Z"
+              "WhenOpened": "2025-10-07T06:56:00.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Collision.cs",
+              "DocumentMoniker": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Collision.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Collision.cs",
+              "ToolTip": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Collision.cs",
+              "RelativeToolTip": "..\\..\\..\\Visual Studio 2022\\Komponenttikirjastot Teht\u00E4v\u00E4t\\HungLib\\Collision.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T06:56:18.904Z"
             }
           ]
         }
