@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Valikkopeli")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf6a4ad00390fef5d5fd899b4927ee7117b3db08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+906c3b1d3d0e9cf5270d5414f73da78a3dac54be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Valikkopeli")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Valikkopeli")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,7 +4,7 @@ using Raylib_cs;
 
 namespace Asteroid
 {
-    class Rocket
+    public class Rocket
     {
         public Vector2 position;
         public Vector2 direction;

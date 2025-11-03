@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v9.0": {
       "Valikkopeli/1.0.0": {
         "dependencies": {
+          "Asteroid": "1.0.0",
+          "HungLib": "1.0.0",
           "Newtonsoft.Json": "13.0.4",
           "RayGUI-cs": "2.0.5",
           "RayGuiCreator": "1.0.0",
@@ -108,6 +110,29 @@
           }
         }
       },
+      "Asteroid/1.0.0": {
+        "dependencies": {
+          "HungLib": "1.0.0",
+          "Raylib-cs": "7.0.1"
+        },
+        "runtime": {
+          "Asteroid.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "HungLib/1.0.0": {
+        "dependencies": {
+          "Raylib-cs": "7.0.1"
+        },
+        "runtime": {
+          "HungLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "RayGuiCreator/1.0.0": {
         "dependencies": {
           "Raylib-CSharp-Vinculum": "5.0.1"
@@ -161,6 +186,16 @@
       "sha512": "sha512-g21BSSFWohdtUohpo3PW7ZHt7EGZ1+qssg3uWoHy5cnJtsPNNoMjzeyX+xOGM6HEi3JhlzPZFJ2+qojuFPXP5A==",
       "path": "raylib-csharp-vinculum/5.0.1",
       "hashPath": "raylib-csharp-vinculum.5.0.1.nupkg.sha512"
+    },
+    "Asteroid/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HungLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "RayGuiCreator/1.0.0": {
       "type": "project",

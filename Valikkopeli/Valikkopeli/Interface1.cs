@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asteroid
+namespace Valikkopeli
 {
-    internal class Sprite
+    internal interface Interface1
     {
     }
 }

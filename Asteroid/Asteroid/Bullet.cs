@@ -1,11 +1,10 @@
-﻿
-using System;
+﻿using System;
 using System.Numerics;
 using Raylib_cs;
 
 namespace Asteroid
 {
-    class Bullet
+    public class Bullet
     {
         public Vector2 position;
         public Vector2 direction;

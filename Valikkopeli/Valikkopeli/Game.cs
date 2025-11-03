@@ -2,42 +2,37 @@
 using Raylib_cs;
 using System;
 using System.Collections.Generic;
+using Asteroid;
 
 namespace Valikkopeli
 {
-    /// <summary>
-    /// Enum jossa on pelin eri tilat.
-    /// </summary>
     enum GameState
     {
         MainMenu,
-        GameLoop,
-        PauseMenu,
         OptionsMenu,
+        Asteroid,
+        PauseMenu,
+        LevelCompleteMenu,
         Quit
     }
 
     internal class Game
     {
-        GameState currentState;
         Stack<GameState> stateStack = new Stack<GameState>();
 
-        public OptionsMenu optionsMenu;
-        public PauseMenu pauseMenu;
+        OptionsMenu optionsMenu;
+        PauseMenu pauseMenu;
+        LevelCompleteMenu levelCompleteMenu; // 🆕 Added
+
+        AsteroidGame asteroidGame;
+        bool isPaused = false;
 
         public void Run()
         {
-            Raylib.InitWindow(640, 480, "Valikkopeli");
-
-            optionsMenu = new OptionsMenu();
-            optionsMenu.BackButtonPressed += OnOptionsBackPressed;
-            Raylib.SetMasterVolume(optionsMenu.settings.masterVolume);
-
-            pauseMenu = new PauseMenu();
-            pauseMenu.BackButtonPressed += OnPauseBackPressed;
-            pauseMenu.OptionsButtonPressed += OnPauseOptionsPressed;
-
+            Raylib.InitWindow(800, 650, "Valikkopeli Menu");
+            Raylib.SetTargetFPS(60);
             Raylib.SetExitKey(KeyboardKey.Null);
+
             MenuCreator.SetDefaultFont("CreatoDisplay-Regular.otf");
             MenuCreator.SetTextColors(
                 Raylib.ColorToInt(Color.Yellow),
@@ -48,96 +43,169 @@ namespace Valikkopeli
                 Raylib.ColorToInt(Color.Yellow),
                 Raylib.ColorToInt(Color.Yellow));
 
-            currentState = GameState.MainMenu;
+            optionsMenu = new OptionsMenu();
+            optionsMenu.BackButtonPressed += OnOptionsBackPressed;
 
-            while (!Raylib.WindowShouldClose() && currentState != GameState.Quit)
+            pauseMenu = new PauseMenu();
+            pauseMenu.ResumeButtonPressed += OnPauseResumePressed;
+            pauseMenu.OptionsButtonPressed += OnPauseOptionsPressed;
+            pauseMenu.ExitButtonPressed += OnPauseExitPressed;
+
+            levelCompleteMenu = new LevelCompleteMenu(); // 🆕 initialize
+            levelCompleteMenu.ContinueButtonPressed += OnLevelContinuePressed; // 🆕
+            levelCompleteMenu.ExitButtonPressed += OnLevelExitPressed;         // 🆕
+
+            stateStack.Push(GameState.MainMenu);
+
+            while (!Raylib.WindowShouldClose() && PeekState() != GameState.Quit)
             {
                 Update();
                 Draw();
             }
+
             Raylib.CloseWindow();
         }
 
-        void OnOptionsBackPressed(object sender, EventArgs _)
+        GameState PeekState() => stateStack.Count > 0 ? stateStack.Peek() : GameState.Quit;
+        void PushState(GameState state) => stateStack.Push(state);
+        void PopState() { if (stateStack.Count > 1) stateStack.Pop(); }
+        void ClearStates() => stateStack.Clear();
+
+        // --- Menu Event Handlers ---
+        void OnOptionsBackPressed(object sender, EventArgs e) => PopState();
+        void OnPauseResumePressed(object sender, EventArgs e) { isPaused = false; PopState(); }
+        void OnPauseOptionsPressed(object sender, EventArgs e) => PushState(GameState.OptionsMenu);
+        void OnPauseExitPressed(object sender, EventArgs e)
         {
-            if (stateStack.Count > 0)
-                ChangeState(stateStack.Pop(), pushToStack: false);
-            else
-                ChangeState(GameState.MainMenu, pushToStack: false);
+            isPaused = false;
+            ClearStates();
+            PushState(GameState.MainMenu);
         }
 
-        void OnPauseBackPressed(object sender, EventArgs _)
+        // 🆕 Level Complete Menu handlers
+        void OnLevelContinuePressed(object sender, EventArgs e)
         {
-            ChangeState(GameState.GameLoop);
+            PopState(); // remove LevelCompleteMenu
+            asteroidGame.ContinueNextLevel();
+            PushState(GameState.Asteroid);
         }
 
-        void OnPauseOptionsPressed(object sender, EventArgs _)
+        void OnLevelExitPressed(object sender, EventArgs e)
         {
-            ChangeState(GameState.OptionsMenu);
+            ClearStates();
+            PushState(GameState.MainMenu);
+            asteroidGame = null;
         }
 
         void Update()
         {
-            switch (currentState)
+            switch (PeekState())
             {
-                case GameState.MainMenu: break;
-                case GameState.GameLoop:
+                case GameState.MainMenu:
+                    break;
+
+                case GameState.Asteroid:
+                    if (asteroidGame == null)
+                        asteroidGame = new AsteroidGame();
+
                     if (Raylib.IsKeyPressed(KeyboardKey.Escape))
-                        ChangeState(GameState.PauseMenu);
+                    {
+                        isPaused = true;
+                        PushState(GameState.PauseMenu);
+                    }
+
+                    asteroidGame.UpdateGameFrame(isPaused);
+
+                    // 🆕 Check for level completion
+                    if (asteroidGame.LevelComplete)
+                    {
+                        PushState(GameState.LevelCompleteMenu);
+                    }
+
+                    // Player dies -> return to menu
+                    if (asteroidGame.Lives <= 0)
+                    {
+                        ClearStates();
+                        PushState(GameState.MainMenu);
+                        asteroidGame = null;
+                        isPaused = false;
+                    }
+
                     break;
+
+                case GameState.LevelCompleteMenu:
                 case GameState.PauseMenu:
-                    pauseMenu.Update();
-                    break;
                 case GameState.OptionsMenu:
-                    optionsMenu.Draw();
                     break;
             }
-        }
-
-        void ChangeState(GameState nextState, bool pushToStack = true)
-        {
-            if (pushToStack)
-                stateStack.Push(currentState);
-
-            if (nextState == GameState.MainMenu)
-                stateStack.Clear();
-
-            currentState = nextState;
         }
 
         void Draw()
         {
             Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.DarkPurple);
-            Raylib.DrawText($"{currentState}", 200, 10, 16, Color.Yellow);
 
-            switch (currentState)
+            switch (PeekState())
+            {
+                case GameState.MainMenu:
+                case GameState.OptionsMenu:
+                case GameState.PauseMenu:
+                case GameState.LevelCompleteMenu:
+                    Raylib.ClearBackground(Color.DarkPurple);
+                    break;
+                case GameState.Asteroid:
+                    Raylib.ClearBackground(Color.Black);
+                    break;
+            }
+
+            switch (PeekState())
             {
                 case GameState.MainMenu:
                     DrawMainMenu();
                     break;
-                case GameState.GameLoop:
-                    // Piirrä peli
-                    break;
-                case GameState.OptionsMenu:
-                    optionsMenu.Draw();
+                case GameState.Asteroid:
+                    asteroidGame?.DrawGameFrame();
+                    if (isPaused)
+                        Raylib.DrawRectangle(0, 0, Raylib.GetScreenWidth(), Raylib.GetScreenHeight(), new Color(0, 0, 0, 150));
                     break;
                 case GameState.PauseMenu:
                     pauseMenu.Draw();
                     break;
+                case GameState.OptionsMenu:
+                    optionsMenu.Draw();
+                    break;
+                case GameState.LevelCompleteMenu:
+                    levelCompleteMenu.Draw(asteroidGame.Level, asteroidGame.Score);
+                    break;
             }
+
             Raylib.EndDrawing();
         }
 
         void DrawMainMenu()
         {
-            MenuCreator mainMenu = new MenuCreator(60, 60, 32, 200);
+            int menuWidth = (int)(Raylib.GetScreenWidth() * 0.4f);
+            int menuX = Raylib.GetScreenWidth() / 2 - menuWidth / 2;
+            int menuY = Raylib.GetScreenHeight() / 4;
+            int rowHeight = 48;
+
+            MenuCreator mainMenu = new MenuCreator(menuX, menuY, rowHeight, menuWidth, 2);
+
             if (mainMenu.Button("Start Game"))
-                ChangeState(GameState.GameLoop);
+            {
+                ClearStates();
+                PushState(GameState.Asteroid);
+                asteroidGame = null;
+                isPaused = false;
+            }
+
             if (mainMenu.Button("Options"))
-                ChangeState(GameState.OptionsMenu);
+                PushState(GameState.OptionsMenu);
+
             if (mainMenu.Button("Exit"))
-                ChangeState(GameState.Quit);
+            {
+                ClearStates();
+                PushState(GameState.Quit);
+            }
         }
     }
 }

@@ -5,16 +5,17 @@ using System.Collections.Generic;
 
 namespace Asteroid
 {
-    class Enemy
+    public class Enemy
     {
         public Vector2 position;
         public Vector2 direction;
         public float speed = 100.0f;
         public Texture2D texture;
         public int hp = 3;
+        public bool isAlive = true;
+
         private float shootCooldown = 1.0f;
         private float shootTimer = 0.0f;
-        public bool isAlive = true;
 
         public Enemy(Vector2 startPosition, Texture2D texture)
         {
@@ -32,7 +33,6 @@ namespace Asteroid
 
             int screenW = Raylib.GetScreenWidth();
             int screenH = Raylib.GetScreenHeight();
-
             if (position.X < 0) position.X += screenW;
             if (position.X > screenW) position.X -= screenW;
             if (position.Y < 0) position.Y += screenH;
