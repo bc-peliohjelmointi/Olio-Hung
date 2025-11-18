@@ -4,23 +4,29 @@ using System;
 
 namespace Valikkopeli
 {
-    public class PauseMenu
+    internal class PauseMenu
     {
+        public event EventHandler ResumeButtonPressed;
         public event EventHandler OptionsButtonPressed;
-        public event EventHandler BackButtonPressed;
+        public event EventHandler ExitButtonPressed;
 
         public void Draw()
         {
-            MenuCreator pause = new MenuCreator(40, 40, 32, 200, 2);
+            int menuWidth = (int)(Raylib.GetScreenWidth() * 0.4f);
+            int menuX = Raylib.GetScreenWidth() / 2 - menuWidth / 2;
+            int menuY = Raylib.GetScreenHeight() / 3;
+            int rowHeight = 48;
+
+            MenuCreator pause = new MenuCreator(menuX, menuY, rowHeight, menuWidth, 2);
+
+            if (pause.Button("Resume"))
+                ResumeButtonPressed?.Invoke(this, EventArgs.Empty);
+
             if (pause.Button("Options"))
                 OptionsButtonPressed?.Invoke(this, EventArgs.Empty);
-            if (pause.Button("Back"))
-                BackButtonPressed?.Invoke(this, EventArgs.Empty);
-        }
 
-        public void Update()
-        {
-            Draw();
+            if (pause.Button("Exit to Main Menu"))
+                ExitButtonPressed?.Invoke(this, EventArgs.Empty);
         }
     }
 }

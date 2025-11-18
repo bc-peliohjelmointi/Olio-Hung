@@ -10,6 +10,7 @@ namespace Valikkopeli
     {
         MainMenu,
         OptionsMenu,
+        DifficultyMenu,
         Asteroid,
         PauseMenu,
         LevelCompleteMenu,
@@ -22,10 +23,12 @@ namespace Valikkopeli
 
         OptionsMenu optionsMenu;
         PauseMenu pauseMenu;
-        LevelCompleteMenu levelCompleteMenu; // 🆕 Added
+        LevelCompleteMenu levelCompleteMenu;
+        DifficultyMenu difficultyMenu;
 
         AsteroidGame asteroidGame;
         bool isPaused = false;
+        GameDifficulty selectedDifficulty = GameDifficulty.Normal;
 
         public void Run()
         {
@@ -51,9 +54,12 @@ namespace Valikkopeli
             pauseMenu.OptionsButtonPressed += OnPauseOptionsPressed;
             pauseMenu.ExitButtonPressed += OnPauseExitPressed;
 
-            levelCompleteMenu = new LevelCompleteMenu(); // 🆕 initialize
-            levelCompleteMenu.ContinueButtonPressed += OnLevelContinuePressed; // 🆕
-            levelCompleteMenu.ExitButtonPressed += OnLevelExitPressed;         // 🆕
+            levelCompleteMenu = new LevelCompleteMenu();
+            levelCompleteMenu.ContinueButtonPressed += OnLevelContinuePressed;
+            levelCompleteMenu.ExitButtonPressed += OnLevelExitPressed;
+
+            difficultyMenu = new DifficultyMenu();
+            difficultyMenu.DifficultySelected += OnDifficultySelected;
 
             stateStack.Push(GameState.MainMenu);
 
@@ -82,10 +88,9 @@ namespace Valikkopeli
             PushState(GameState.MainMenu);
         }
 
-        // 🆕 Level Complete Menu handlers
         void OnLevelContinuePressed(object sender, EventArgs e)
         {
-            PopState(); // remove LevelCompleteMenu
+            PopState();
             asteroidGame.ContinueNextLevel();
             PushState(GameState.Asteroid);
         }
@@ -97,6 +102,21 @@ namespace Valikkopeli
             asteroidGame = null;
         }
 
+        void OnDifficultySelected(object sender, GameDifficulty diff)
+        {
+            if ((int)diff == -1) // Back button
+            {
+                PopState();
+                return;
+            }
+
+            selectedDifficulty = diff;
+            ClearStates();
+            PushState(GameState.Asteroid);
+            asteroidGame = null;
+            isPaused = false;
+        }
+
         void Update()
         {
             switch (PeekState())
@@ -104,9 +124,12 @@ namespace Valikkopeli
                 case GameState.MainMenu:
                     break;
 
+                case GameState.DifficultyMenu:
+                    break;
+
                 case GameState.Asteroid:
                     if (asteroidGame == null)
-                        asteroidGame = new AsteroidGame();
+                        asteroidGame = new AsteroidGame((Asteroid.Difficulty)selectedDifficulty);
 
                     if (Raylib.IsKeyPressed(KeyboardKey.Escape))
                     {
@@ -116,13 +139,9 @@ namespace Valikkopeli
 
                     asteroidGame.UpdateGameFrame(isPaused);
 
-                    // 🆕 Check for level completion
                     if (asteroidGame.LevelComplete)
-                    {
                         PushState(GameState.LevelCompleteMenu);
-                    }
 
-                    // Player dies -> return to menu
                     if (asteroidGame.Lives <= 0)
                     {
                         ClearStates();
@@ -150,6 +169,7 @@ namespace Valikkopeli
                 case GameState.OptionsMenu:
                 case GameState.PauseMenu:
                 case GameState.LevelCompleteMenu:
+                case GameState.DifficultyMenu:
                     Raylib.ClearBackground(Color.DarkPurple);
                     break;
                 case GameState.Asteroid:
@@ -161,6 +181,9 @@ namespace Valikkopeli
             {
                 case GameState.MainMenu:
                     DrawMainMenu();
+                    break;
+                case GameState.DifficultyMenu:
+                    difficultyMenu.Draw();
                     break;
                 case GameState.Asteroid:
                     asteroidGame?.DrawGameFrame();
@@ -193,7 +216,7 @@ namespace Valikkopeli
             if (mainMenu.Button("Start Game"))
             {
                 ClearStates();
-                PushState(GameState.Asteroid);
+                PushState(GameState.DifficultyMenu);
                 asteroidGame = null;
                 isPaused = false;
             }
