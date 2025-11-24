@@ -1,0 +1,19 @@
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\bin\Debug\net9.0-windows\Wpf peli.exe
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\bin\Debug\net9.0-windows\Wpf peli.deps.json
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\bin\Debug\net9.0-windows\Wpf peli.runtimeconfig.json
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\bin\Debug\net9.0-windows\Wpf peli.dll
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\bin\Debug\net9.0-windows\Wpf peli.pdb
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\App.g.cs
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli_MarkupCompile.cache
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.g.resources
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.AssemblyInfoInputs.cache
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.AssemblyInfo.cs
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.csproj.CoreCompileInputs.cache
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.dll
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\refint\Wpf peli.dll
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.pdb
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\Wpf peli.genruntimeconfig.cache
+C:\Tiedostot\Visual Studio 2022\Komponenttikirjastot Tehtävät\Wpf peli\Wpf peli\obj\Debug\net9.0-windows\ref\Wpf peli.dll

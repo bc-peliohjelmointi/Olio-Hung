@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Wpf peli/1.0.0": {
+        "runtime": {
+          "Wpf peli.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Wpf peli/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
