@@ -1,0 +1,13 @@
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\bin\Debug\net8.0\RayGuiCreator.deps.json
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\bin\Debug\net8.0\RayGuiCreator.dll
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\bin\Debug\net8.0\RayGuiCreator.pdb
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.csproj.AssemblyReference.cache
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.AssemblyInfoInputs.cache
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.AssemblyInfo.cs
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.csproj.CoreCompileInputs.cache
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.sourcelink.json
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.dll
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\refint\RayGuiCreator.dll
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\RayGuiCreator.pdb
+C:\Tiedostot\Olio-Hung\RayGUI\RayGuiCreator\RayGuiCreator\obj\Debug\net8.0\ref\RayGuiCreator.dll

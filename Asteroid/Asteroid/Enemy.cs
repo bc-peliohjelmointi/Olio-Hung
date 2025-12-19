@@ -2,67 +2,106 @@
 using System.Numerics;
 using Raylib_cs;
 using System.Collections.Generic;
+using hunglib;
 
 namespace Asteroid
 {
-    class Enemy
+    public class Enemy
     {
-        public Vector2 position;
-        public Vector2 direction;
-        public float speed = 100.0f;
-        public Texture2D texture;
-        public int hp = 3;
-        private float shootCooldown = 1.0f;
+        public TransformComponent Transform;
+        public PhysicsComponent Physics;
+        public SpriteRendererComponent Renderer;
+        public ColliderComponent Collider;
+        private ScreenWrapComponent _wrapper;
+
+        public int Hp = 3;
+        public bool IsAlive = true;
+
+        public float Speed = 90.0f;
+        private float TurnSpeed = 3.0f;
+
+        private float shootCooldown = 1.5f;
         private float shootTimer = 0.0f;
-        public bool isAlive = true;
+        private float stopDistance = 180.0f;
 
         public Enemy(Vector2 startPosition, Texture2D texture)
         {
-            this.position = startPosition;
-            this.texture = texture;
-            this.direction = new Vector2(0, 1);
+            Transform = new TransformComponent(startPosition);
+            Physics = new PhysicsComponent(Vector2.Zero);
+            Renderer = new SpriteRendererComponent(texture) { Tint = Color.Red };
+            Collider = new ColliderComponent(texture.Width / 2.0f);
+            _wrapper = new ScreenWrapComponent(Transform);
         }
 
         public void Update(float deltaTime, Vector2 playerPosition, List<Bullet> enemyBullets, Texture2D bulletTexture)
         {
-            if (!isAlive) return;
+            if (!IsAlive) return;
 
-            direction = Vector2.Normalize(playerPosition - position);
-            position += direction * speed * deltaTime;
+            Vector2 offset = playerPosition - Transform.Position;
+            float distanceToPlayer = offset.Length();
 
-            int screenW = Raylib.GetScreenWidth();
-            int screenH = Raylib.GetScreenHeight();
+            float targetAngle = MathF.Atan2(offset.Y, offset.X) + (MathF.PI / 2f);
+            float angleDifference = targetAngle - Transform.Rotation;
 
-            if (position.X < 0) position.X += screenW;
-            if (position.X > screenW) position.X -= screenW;
-            if (position.Y < 0) position.Y += screenH;
-            if (position.Y > screenH) position.Y -= screenH;
+            while (angleDifference < -MathF.PI) angleDifference += 2 * MathF.PI;
+            while (angleDifference > MathF.PI) angleDifference -= 2 * MathF.PI;
+
+            float maxTurn = TurnSpeed * deltaTime;
+
+            if (MathF.Abs(angleDifference) < maxTurn)
+            {
+                Transform.Rotation = targetAngle;
+            }
+            else
+            {
+                Transform.Rotation += MathF.Sign(angleDifference) * maxTurn;
+            }
+
+            float rotationRad = Transform.Rotation - (MathF.PI / 2f);
+            Vector2 facingDirection = new Vector2(MathF.Cos(rotationRad), MathF.Sin(rotationRad));
+
+            if (distanceToPlayer > stopDistance)
+            {
+                Physics.Velocity = facingDirection * Speed;
+            }
+            else
+            {
+                Physics.Velocity = Vector2.Zero;
+            }
+
+            Physics.Update(deltaTime, Transform);
+            _wrapper.Update(deltaTime);
 
             shootTimer -= deltaTime;
-            if (shootTimer <= 0.0f)
+
+            bool isFacingPlayer = MathF.Abs(angleDifference) < 0.5f;
+
+            if (shootTimer <= 0.0f && isFacingPlayer)
             {
-                enemyBullets.Add(new Bullet(position + direction * 20, direction, bulletTexture));
+                Vector2 spawnPos = Transform.Position + facingDirection * 20;
+
+                float inaccuracy = 0.2f;
+                float rndX = (Raylib.GetRandomValue(-100, 100) / 100.0f) * inaccuracy;
+                float rndY = (Raylib.GetRandomValue(-100, 100) / 100.0f) * inaccuracy;
+
+                Vector2 bulletDir = Vector2.Normalize(facingDirection + new Vector2(rndX, rndY));
+
+                enemyBullets.Add(new Bullet(spawnPos, bulletDir, bulletTexture));
                 shootTimer = shootCooldown;
             }
         }
 
         public void TakeDamage(int amount)
         {
-            hp -= amount;
-            if (hp <= 0)
-                isAlive = false;
+            Hp -= amount;
+            if (Hp <= 0)
+                IsAlive = false;
         }
 
         public void Draw()
         {
-            if (!isAlive) return;
-
-            float rotationDeg = MathF.Atan2(direction.Y, direction.X) * (180.0f / MathF.PI) + 90.0f;
-            Rectangle source = new Rectangle(0, 0, texture.Width, texture.Height);
-            Rectangle dest = new Rectangle(position.X, position.Y, texture.Width, texture.Height);
-            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2);
-
-            Raylib.DrawTexturePro(texture, source, dest, origin, rotationDeg, Color.Red);
+            if (!IsAlive) return;
+            Renderer.Draw(Transform);
         }
     }
 }

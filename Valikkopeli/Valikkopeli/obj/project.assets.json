@@ -114,6 +114,33 @@
           }
         }
       },
+      "Asteroid/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "HungLib": "1.0.0",
+          "Raylib-cs": "7.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Asteroid.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Asteroid.dll": {}
+        }
+      },
+      "HungLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Raylib-cs": "7.0.1"
+        },
+        "compile": {
+          "bin/placeholder/HungLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HungLib.dll": {}
+        }
+      },
       "RayGuiCreator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -241,6 +268,16 @@
         "runtimes/win-x64/native/raylib.pdb"
       ]
     },
+    "Asteroid/1.0.0": {
+      "type": "project",
+      "path": "../../Asteroid/Asteroid/Asteroid.csproj",
+      "msbuildProject": "../../Asteroid/Asteroid/Asteroid.csproj"
+    },
+    "HungLib/1.0.0": {
+      "type": "project",
+      "path": "../../../Visual Studio 2022/Komponenttikirjastot Tehtävät/HungLib/HungLib.csproj",
+      "msbuildProject": "../../../Visual Studio 2022/Komponenttikirjastot Tehtävät/HungLib/HungLib.csproj"
+    },
     "RayGuiCreator/1.0.0": {
       "type": "project",
       "path": "../../RayGUI/RayGuiCreator/RayGuiCreator/RayGuiCreator.csproj",
@@ -249,6 +286,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Asteroid >= 1.0.0",
+      "HungLib >= 1.0.0",
       "Newtonsoft.Json >= 13.0.4",
       "RayGUI-cs >= 2.0.5",
       "RayGuiCreator >= 1.0.0",
@@ -287,8 +326,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj": {
+              "projectPath": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj"
+            },
             "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj": {
               "projectPath": "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj"
+            },
+            "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj": {
+              "projectPath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj"
             }
           }
         }
@@ -338,7 +383,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

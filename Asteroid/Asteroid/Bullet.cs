@@ -1,52 +1,49 @@
-﻿
-using System;
-using System.Numerics;
+﻿using System.Numerics;
 using Raylib_cs;
+using hunglib;
 
 namespace Asteroid
 {
-    class Bullet
+    public class Bullet
     {
-        public Vector2 position;
-        public Vector2 direction;
-        public float speed = 400.0f;
-        public float lifetime = 2.0f;
-        public bool isAlive = true;
-        public Texture2D texture;
-        public float Radius => texture.Width / 2.0f;
+        public TransformComponent Transform;
+        public PhysicsComponent Physics;
+        public SpriteRendererComponent Renderer;
+        public ColliderComponent Collider;
+        private ScreenWrapComponent _wrapper;
+
+        public bool IsAlive = true;
+        public float Lifetime = 2.0f;
 
         public Bullet(Vector2 position, Vector2 direction, Texture2D texture)
         {
-            this.position = position;
-            this.direction = Vector2.Normalize(direction);
-            this.texture = texture;
+            float speed = 400.0f;
+            Vector2 velocity = Vector2.Normalize(direction) * speed;
+
+            float rotation = MathF.Atan2(direction.Y, direction.X) + (MathF.PI / 2f);
+
+            Transform = new TransformComponent(position, rotation, 1.0f);
+            Physics = new PhysicsComponent(velocity);
+            Renderer = new SpriteRendererComponent(texture);
+            _wrapper = new ScreenWrapComponent(Transform);
+
+            float maxDimension = MathF.Max(texture.Width, texture.Height);
+            Collider = new ColliderComponent(maxDimension * 0.4f);
         }
 
         public void Update(float deltaTime)
         {
-            position += direction * speed * deltaTime;
-            lifetime -= deltaTime;
-            if (lifetime <= 0.0f)
-                isAlive = false;
+            Physics.Update(deltaTime, Transform);
+            _wrapper.Update(deltaTime);
 
-            int screenW = Raylib.GetScreenWidth();
-            int screenH = Raylib.GetScreenHeight();
-
-            if (position.X < 0) position.X += screenW;
-            if (position.X > screenW) position.X -= screenW;
-            if (position.Y < 0) position.Y += screenH;
-            if (position.Y > screenH) position.Y -= screenH;
+            Lifetime -= deltaTime;
+            if (Lifetime <= 0.0f)
+                IsAlive = false;
         }
 
         public void Draw()
         {
-            float rotationDeg = MathF.Atan2(direction.Y, direction.X) * (180.0f / MathF.PI) + 90.0f;
-
-            Rectangle source = new Rectangle(0, 0, texture.Width, texture.Height);
-            Rectangle dest = new Rectangle(position.X, position.Y, texture.Width, texture.Height);
-            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2);
-
-            Raylib.DrawTexturePro(texture, source, dest, origin, rotationDeg, Color.White);
+            Renderer.Draw(Transform);
         }
     }
 }

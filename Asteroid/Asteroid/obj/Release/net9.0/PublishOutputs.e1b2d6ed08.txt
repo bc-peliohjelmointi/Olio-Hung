@@ -1,0 +1,16 @@
+C:\Tiedostot\Olio-Hung\Data\images\enemyRed1.png
+C:\Tiedostot\Olio-Hung\Data\images\laserBlue01.png
+C:\Tiedostot\Olio-Hung\Data\images\laserRed01.png
+C:\Tiedostot\Olio-Hung\Data\images\meteorBrown_big1.png
+C:\Tiedostot\Olio-Hung\Data\images\playerShip2_blue.png
+C:\Tiedostot\Olio-Hung\Asteroid.dll
+C:\Tiedostot\Olio-Hung\Asteroid.deps.json
+C:\Tiedostot\Olio-Hung\Asteroid.pdb
+C:\Tiedostot\Olio-Hung\Raylib-cs.dll
+C:\Tiedostot\Olio-Hung\runtimes\linux-x64\native\libraylib.so
+C:\Tiedostot\Olio-Hung\runtimes\osx-arm64\native\libraylib.dylib
+C:\Tiedostot\Olio-Hung\runtimes\osx-x64\native\libraylib.dylib
+C:\Tiedostot\Olio-Hung\runtimes\win-x64\native\raylib.dll
+C:\Tiedostot\Olio-Hung\runtimes\win-x86\native\raylib.dll
+C:\Tiedostot\Olio-Hung\HungLib.dll
+C:\Tiedostot\Olio-Hung\HungLib.pdb

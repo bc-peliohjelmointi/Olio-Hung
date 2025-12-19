@@ -1,0 +1,314 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli – kopio\\Valikkopeli.csproj": {}
+  },
+  "projects": {
+    "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj",
+        "projectName": "Asteroid",
+        "projectPath": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj",
+        "packagesPath": "C:\\Users\\s2300809\\.nuget\\packages\\",
+        "outputPath": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s2300809\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj": {
+                "projectPath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Raylib-cs": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj",
+        "projectName": "RayGuiCreator",
+        "projectPath": "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj",
+        "packagesPath": "C:\\Users\\s2300809\\.nuget\\packages\\",
+        "outputPath": "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s2300809\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Raylib-CSharp-Vinculum": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli – kopio\\Valikkopeli.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli – kopio\\Valikkopeli.csproj",
+        "projectName": "Valikkopeli",
+        "projectPath": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli – kopio\\Valikkopeli.csproj",
+        "packagesPath": "C:\\Users\\s2300809\\.nuget\\packages\\",
+        "outputPath": "C:\\Tiedostot\\Olio-Hung\\Valikkopeli\\Valikkopeli – kopio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s2300809\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj": {
+                "projectPath": "C:\\Tiedostot\\Olio-Hung\\Asteroid\\Asteroid\\Asteroid.csproj"
+              },
+              "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj": {
+                "projectPath": "C:\\Tiedostot\\Olio-Hung\\RayGUI\\RayGuiCreator\\RayGuiCreator\\RayGuiCreator.csproj"
+              },
+              "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj": {
+                "projectPath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            },
+            "RayGUI-cs": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
+            "Raylib-cs": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj",
+        "projectName": "HungLib",
+        "projectPath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj",
+        "packagesPath": "C:\\Users\\s2300809\\.nuget\\packages\\",
+        "outputPath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\s2300809\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Raylib-cs": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

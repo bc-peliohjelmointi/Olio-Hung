@@ -1,12 +1,14 @@
-﻿
+﻿using Asteroid;
+using Valikkopeli;
+
 namespace Valikkopeli
 {
-    internal class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
-            game.Run();
+            Game menu = new Game();
+            menu.Run();
         }
     }
 }
