@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8xQWAvMrBmM=",
+  "success": true,
+  "projectFilePath": "C:\\Tiedostot\\Visual Studio 2022\\Komponenttikirjastot Tehtävät\\HungLib\\HungLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s2300809\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
