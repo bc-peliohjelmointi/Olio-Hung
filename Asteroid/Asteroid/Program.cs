@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.IO;
 using System.Text.Json;
+using hunglib;
 
 namespace Asteroid
 {
@@ -19,7 +20,6 @@ namespace Asteroid
     {
         Texture2D playerTexture;
         Rocket playerRocket;
-        Vector2 playerPosition;
 
         List<Asteroid> asteroids = new List<Asteroid>();
         Texture2D asteroidTexture;
@@ -39,19 +39,18 @@ namespace Asteroid
         int lives = 5;
 
         public Difficulty GameDifficulty { get; private set; }
-
         public int Lives => lives;
         public int Level => level;
         public int Score => score;
         public bool LevelComplete { get; private set; } = false;
 
         bool hasPlayerActed = false;
-        float spawnProtectionTimer = 3.0f;
+
+        float spawnProtectionTimer = 1.5f;
 
         const string HighScoreFile = "Data/highscores.json";
         HighScoreData highScore = new HighScoreData();
 
-        // difficulty scaling
         float scoreMultiplier = 1.0f;
 
         public AsteroidGame(Difficulty difficulty)
@@ -70,8 +69,8 @@ namespace Asteroid
             enemyTexture = Raylib.LoadTexture("Data/images/enemyRed1.png");
             enemyBulletTexture = Raylib.LoadTexture("Data/images/laserRed01.png");
 
-            playerPosition = new Vector2(Raylib.GetScreenWidth() / 2, Raylib.GetScreenHeight() / 2);
-            playerRocket = new Rocket(playerPosition, playerTexture);
+            Vector2 centerScreen = new Vector2(Raylib.GetScreenWidth() / 2, Raylib.GetScreenHeight() / 2);
+            playerRocket = new Rocket(centerScreen, playerTexture);
             enemy = new Enemy(new Vector2(100, 100), enemyTexture);
 
             LoadHighScore();
@@ -81,15 +80,9 @@ namespace Asteroid
         {
             switch (difficulty)
             {
-                case Difficulty.Easy:
-                    scoreMultiplier = 0.8f;
-                    break;
-                case Difficulty.Normal:
-                    scoreMultiplier = 1.0f;
-                    break;
-                case Difficulty.Hard:
-                    scoreMultiplier = 1.5f;
-                    break;
+                case Difficulty.Easy: scoreMultiplier = 0.8f; break;
+                case Difficulty.Normal: scoreMultiplier = 1.0f; break;
+                case Difficulty.Hard: scoreMultiplier = 1.5f; break;
             }
         }
 
@@ -112,7 +105,7 @@ namespace Asteroid
                         rand.Next(100, Raylib.GetScreenWidth() - 100),
                         rand.Next(100, Raylib.GetScreenHeight() - 100)
                     );
-                } while (Vector2.Distance(pos, playerPosition) < 200);
+                } while (Vector2.Distance(pos, playerRocket.Transform.Position) < 300);
 
                 Vector2 vel = new Vector2(rand.Next(-100, 100), rand.Next(-100, 100));
 
@@ -123,17 +116,12 @@ namespace Asteroid
             }
 
             int baseHP = 3 + level;
-            enemy.hp = GameDifficulty switch
+            enemy.Hp = GameDifficulty switch
             {
                 Difficulty.Easy => Math.Max(1, (int)(baseHP * 0.8f)),
                 Difficulty.Hard => Math.Max(1, (int)(baseHP * 1.4f)),
                 _ => baseHP
             };
-        }
-
-        bool CheckCollision(Vector2 pos1, float r1, Vector2 pos2, float r2)
-        {
-            return Vector2.Distance(pos1, pos2) < r1 + r2;
         }
 
         public void UpdateGameFrame(bool isPaused)
@@ -148,18 +136,18 @@ namespace Asteroid
             foreach (Bullet b in bullets) b.Update(deltaTime);
             foreach (Bullet eb in enemyBullets) eb.Update(deltaTime);
 
-            bullets.RemoveAll(b => !b.isAlive);
-            enemyBullets.RemoveAll(b => !b.isAlive);
+            bullets.RemoveAll(b => !b.IsAlive);
+            enemyBullets.RemoveAll(b => !b.IsAlive);
 
             playerRocket.Update(deltaTime);
 
             if (hasPlayerActed || spawnProtectionTimer <= 0)
-                enemy.Update(deltaTime, playerRocket.position, enemyBullets, enemyBulletTexture);
+                enemy.Update(deltaTime, playerRocket.Transform.Position, enemyBullets, enemyBulletTexture);
 
             if (Raylib.IsKeyPressed(KeyboardKey.Space))
             {
                 Vector2 bulletDir = playerRocket.GetDirection();
-                Vector2 bulletPos = playerRocket.position + bulletDir * 30;
+                Vector2 bulletPos = playerRocket.Transform.Position + bulletDir * 30;
                 bullets.Add(new Bullet(bulletPos, bulletDir, bulletTexture));
                 hasPlayerActed = true;
             }
@@ -175,7 +163,7 @@ namespace Asteroid
 
             CheckBulletCollisions();
 
-            if (asteroids.Count == 0 && !enemy.isAlive)
+            if (asteroids.Count == 0 && !enemy.IsAlive)
             {
                 LevelComplete = true;
                 SaveHighScore();
@@ -187,9 +175,14 @@ namespace Asteroid
             LevelComplete = false;
             level++;
             lives = 5;
+            playerRocket.Transform.Position = new Vector2(Raylib.GetScreenWidth() / 2, Raylib.GetScreenHeight() / 2);
+            playerRocket.Physics.Velocity = Vector2.Zero;
+            playerRocket.Transform.Rotation = 0f;
+
             enemy = new Enemy(new Vector2(rand.Next(100, 700), rand.Next(100, 500)), enemyTexture);
             CreateLevel(level);
-            spawnProtectionTimer = 3f;
+
+            spawnProtectionTimer = 1.5f;
             hasPlayerActed = false;
         }
 
@@ -210,8 +203,8 @@ namespace Asteroid
 
             if (spawnProtectionTimer > 0)
             {
-                Color glow = Raylib.ColorAlpha(Color.Blue, spawnProtectionTimer / 3f);
-                Raylib.DrawCircleV(playerRocket.position, 45, glow);
+                Color glow = Raylib.ColorAlpha(Color.Blue, spawnProtectionTimer / 1.5f);
+                Raylib.DrawCircleV(playerRocket.Transform.Position, 45, glow);
             }
         }
 
@@ -223,20 +216,20 @@ namespace Asteroid
             {
                 for (int j = asteroids.Count - 1; j >= 0; j--)
                 {
-                    if (CheckCollision(bullets[i].position, bullets[i].Radius, asteroids[j].position, asteroids[j].Radius))
+                    if (bullets[i].Collider.CollidesWith(bullets[i].Transform, asteroids[j].Transform, asteroids[j].Collider))
                     {
-                        bullets[i].isAlive = false;
+                        bullets[i].IsAlive = false;
 
-                        int points = (int)(100 * asteroids[j].size * level * scoreMultiplier);
+                        int points = (int)(100 * asteroids[j].Size * level * scoreMultiplier);
                         score += points;
 
-                        if (asteroids[j].size > 0.25f)
+                        if (asteroids[j].Size > 0.25f)
                         {
                             for (int k = 0; k < 2; k++)
                             {
                                 float angle = (float)(rand.NextDouble() * Math.PI * 2);
                                 Vector2 dir = new Vector2(MathF.Cos(angle), MathF.Sin(angle));
-                                newAsteroids.Add(new Asteroid(asteroids[j].position, dir * 80, asteroidTexture, asteroids[j].size / 2f));
+                                newAsteroids.Add(new Asteroid(asteroids[j].Transform.Position, dir * 80, asteroidTexture, asteroids[j].Size / 2f));
                             }
                         }
 
@@ -247,15 +240,15 @@ namespace Asteroid
             }
             asteroids.AddRange(newAsteroids);
 
-            if (enemy.isAlive)
+            if (enemy.IsAlive)
             {
                 foreach (Bullet b in bullets)
                 {
-                    if (CheckCollision(b.position, b.Radius, enemy.position, enemy.texture.Width / 2f))
+                    if (b.Collider.CollidesWith(b.Transform, enemy.Transform, enemy.Collider))
                     {
-                        b.isAlive = false;
+                        b.IsAlive = false;
                         enemy.TakeDamage(1);
-                        if (!enemy.isAlive)
+                        if (!enemy.IsAlive)
                         {
                             int bonus = (int)(500 * level * scoreMultiplier);
                             score += bonus;
@@ -269,11 +262,9 @@ namespace Asteroid
 
         void CheckPlayerCollisions()
         {
-            float playerRadius = playerTexture.Width / 2f;
-
             foreach (Asteroid a in asteroids)
             {
-                if (CheckCollision(playerRocket.position, playerRadius, a.position, a.Radius))
+                if (playerRocket.Collider.CollidesWith(playerRocket.Transform, a.Transform, a.Collider))
                 {
                     PlayerHit();
                     break;
@@ -282,9 +273,9 @@ namespace Asteroid
 
             foreach (Bullet eb in enemyBullets)
             {
-                if (CheckCollision(eb.position, eb.Radius, playerRocket.position, playerRadius))
+                if (playerRocket.Collider.CollidesWith(playerRocket.Transform, eb.Transform, eb.Collider))
                 {
-                    eb.isAlive = false;
+                    eb.IsAlive = false;
                     PlayerHit();
                     break;
                 }
@@ -296,9 +287,10 @@ namespace Asteroid
         void PlayerHit()
         {
             lives--;
-            playerRocket.position = new Vector2(Raylib.GetScreenWidth() / 2, Raylib.GetScreenHeight() / 2);
-            playerRocket.velocity = Vector2.Zero;
-            spawnProtectionTimer = 3f;
+            playerRocket.Transform.Position = new Vector2(Raylib.GetScreenWidth() / 2, Raylib.GetScreenHeight() / 2);
+            playerRocket.Physics.Velocity = Vector2.Zero;
+
+            spawnProtectionTimer = 1.5f;
             hasPlayerActed = false;
         }
 
